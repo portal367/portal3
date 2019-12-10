@@ -385,7 +385,10 @@
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>[Niveau1].xml</event-sheet>
+        <event-sheet>[Méca Portail].xml</event-sheet>
+        <event-sheet>[MortFin].xml</event-sheet>
+        <event-sheet>[Alllvl].xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="50" />
