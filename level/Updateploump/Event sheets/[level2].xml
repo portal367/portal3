@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[level2]</name>
+    <events>
+        <include>[Méca Portail]</include>
+        <include>[MortFin]</include>
+        <include>[Alllvl]</include>
+        <event-block sid="845715818481108">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="568296352657218" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="250413071684083" type="Pistoletportailhorizontal">
+                    <param id="0" name="Pin to">Sandra</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

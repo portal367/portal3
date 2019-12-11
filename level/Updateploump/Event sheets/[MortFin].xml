@@ -25,7 +25,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-26" name="Restart layout" sid="516803277643404" type="System" />
                         <action id="-21" name="Reset global variables" sid="786798697982783" type="System" />
                     </actions>
                 </event-block>

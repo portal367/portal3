@@ -333,6 +333,9 @@
                 <behavior-type name="Pin" sid="985857274123085">
                     <behavior id="Pin" />
                 </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="636041988017501">
+                    <behavior id="destroy" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954926736004510" speed="5">
@@ -419,16 +422,63 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Ploump\Desktop\Ludus\Groupe\Jeu\Sources\Background_portal3.1.jpg" />
         </object-type>
+        <object-type name="pascible" sid="367500945078011">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696826570721103" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.513514" original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\blocklevel.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blocklevel" sid="301868473980771">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="410196729797820">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301487064884735" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.513514" original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\blocklevel.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cibleportail" sid="418440519812767">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="405573586582229" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="541643965406974">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581141810124184" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="583724202260421">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="919444086359344" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Level2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>[Niveau1].xml</event-sheet>
         <event-sheet>[Méca Portail].xml</event-sheet>
         <event-sheet>[MortFin].xml</event-sheet>
         <event-sheet>[Alllvl].xml</event-sheet>
+        <event-sheet>[level2].xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="50" />
