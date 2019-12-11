@@ -62,14 +62,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/pascible/" />
         <folder expanded="1" path="animation-folder/blocklevel/" />
         <folder expanded="1" path="animation-folder/cibleportail/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/Sprite5/" />
         <folder expanded="1" path="animation-folder/contourdemapsolide/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/Dalle/" />
+        <folder expanded="1" path="animation-folder/Coulissante/" />
     </folders-expanded>
 </c2uistate>
