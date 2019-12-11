@@ -11,12 +11,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Layout 1</layout>
-        <layout active="1" order="5">Level2</layout>
+        <layout order="5">Level2</layout>
+        <layout order="7">level3</layout>
         <event-sheet order="1">[Alllvl]</event-sheet>
         <event-sheet order="2">[MortFin]</event-sheet>
         <event-sheet order="3">[Méca Portail]</event-sheet>
         <event-sheet order="4">[Niveau1]</event-sheet>
-        <event-sheet order="6">[level2]</event-sheet>
+        <event-sheet order="6">[lNiveau2]</event-sheet>
+        <event-sheet active="1" order="8">[Niveau3]</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -62,5 +64,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/cibleportail/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/contourdemapsolide/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Dalle/" />
     </folders-expanded>
 </c2uistate>

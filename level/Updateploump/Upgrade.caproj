@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -136,14 +137,14 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488464160256201" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502183">
+                    <frame duration="1" hotspotX="0.540541" hotspotY="0.973799">
                         <collision-poly>
-                            <point x="0.547297" y="0" />
-                            <point x="0.891892" y="0.220524" />
-                            <point x="0.898649" y="0.696507" />
-                            <point x="0.560811" y="0.958515" />
-                            <point x="0.121622" y="0.717249" />
-                            <point x="0.141892" y="0.340611" />
+                            <point x="0.506756" y="0.0786026" />
+                            <point x="0.77027" y="0.268559" />
+                            <point x="0.75" y="0.705241" />
+                            <point x="0.547297" y="0.919214" />
+                            <point x="0.297298" y="0.695415" />
+                            <point x="0.290541" y="0.349345" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -176,7 +177,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353261060504907" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.530702" hotspotY="0.959459">
+                        <collision-poly>
+                            <point x="0.0964912" y="0.486486" />
+                            <point x="0.300439" y="0.27027" />
+                            <point x="0.561404" y="0.22973" />
+                            <point x="0.907895" y="0.432432" />
+                            <point x="0.864035" y="0.689189" />
+                            <point x="0.585526" y="0.777027" />
+                            <point x="0.171053" y="0.77027" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -212,14 +223,16 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156008196692780" speed="5">
-                    <frame duration="1" hotspotX="0.506849" hotspotY="0.502183">
+                    <frame duration="1" hotspotX="0.534247" hotspotY="0.960699">
                         <collision-poly>
-                            <point x="0.164384" y="0.246725" />
-                            <point x="0.445206" y="0.00436681" />
-                            <point x="0.828767" y="0.172489" />
-                            <point x="1" y="0.5" />
-                            <point x="0.575342" y="0.991266" />
-                            <point x="0.178082" y="0.912664" />
+                            <point x="0.294521" y="0.582969" />
+                            <point x="0.424658" y="0.180131" />
+                            <point x="0.534247" y="0.0982533" />
+                            <point x="0.712329" y="0.216157" />
+                            <point x="0.746576" y="0.5131" />
+                            <point x="0.69863" y="0.804584" />
+                            <point x="0.547945" y="0.912664" />
+                            <point x="0.390411" y="0.818778" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -229,7 +242,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="239922248998638" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506849" />
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.575342">
+                        <collision-poly>
+                            <point x="0.25" y="0.383562" />
+                            <point x="0.460526" y="0.30137" />
+                            <point x="0.916667" y="0.441781" />
+                            <point x="0.864035" y="0.650685" />
+                            <point x="0.662281" y="0.726027" />
+                            <point x="0.276316" y="0.726027" />
+                            <point x="0.114035" y="0.568493" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -467,18 +490,113 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TiledBackground2" sid="357202334668274">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\level3.jpg" />
+        </object-type>
+        <object-type name="Sprite2" sid="749955429679992">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="787953434206877" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\level3.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tilemap" sid="216296909810367">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\level3.jpg" />
+            <tiles>
+                <tile id="254">
+                    <collision-poly>
+                        <point x="0" y="0.328125" />
+                        <point x="0.59375" y="0.328125" />
+                        <point x="0.578125" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="Sprite4" sid="426173532105909">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="356718347845751" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="877423017116138">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="203897492343735" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\level3.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="contourdemapsolide" sid="774298722368946">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="403242865581273">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849415389525566" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="592495046885221">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="892355802186241" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="455513517682783">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="149781429602174" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Dalle" sid="288496370488135">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Dalle" pingpong="0" repeatcount="1" repeatto="0" sid="232853046312418" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\Dalle.png">
+                        <collision-poly>
+                            <point x="0.102564" y="0.4" />
+                            <point x="0.538462" y="0.1" />
+                            <point x="0.948718" y="0.5" />
+                            <point x="0.897436" y="0.9" />
+                            <point x="0.974359" y="1" />
+                            <point x="0.538462" y="1" />
+                            <point x="0.0769231" y="1" />
+                            <point x="0.102564" y="0.9" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="DalleAppuyée" pingpong="0" repeatcount="1" repeatto="0" sid="246935909706134" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>Level2.xml</layout>
+        <layout>level3.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>[Niveau1].xml</event-sheet>
         <event-sheet>[Méca Portail].xml</event-sheet>
         <event-sheet>[MortFin].xml</event-sheet>
         <event-sheet>[Alllvl].xml</event-sheet>
-        <event-sheet>[level2].xml</event-sheet>
+        <event-sheet>[lNiveau2].xml</event-sheet>
+        <event-sheet>[Niveau3].xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="50" />
