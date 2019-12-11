@@ -49,7 +49,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Sprite" sid="524262878916973">
+        <object-type name="Solportail" sid="524262878916973">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="944051780324485">
@@ -82,10 +82,15 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Ploump\Desktop\Ludus\Groupe\Jeu\Sources\Sansbras (1).png">
                         <image-point name="Imagepoint 1" x="0.777778" y="0.666667" />
                         <collision-poly>
-                            <point x="0.277778" y="0.190476" />
-                            <point x="0.777778" y="0.714286" />
-                            <point x="0.611111" y="0.952381" />
-                            <point x="0.388889" y="0.714286" />
+                            <point x="0.5" y="0.0595236" />
+                            <point x="0.722222" y="0.0565474" />
+                            <point x="0.927083" y="0.202381" />
+                            <point x="0.934028" y="0.47619" />
+                            <point x="0.791667" y="0.639881" />
+                            <point x="0.739584" y="0.955357" />
+                            <point x="0.493055" y="0.940476" />
+                            <point x="0.392361" y="0.851191" />
+                            <point x="0.296875" y="0.205357" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -131,7 +136,16 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488464160256201" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502183" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502183">
+                        <collision-poly>
+                            <point x="0.547297" y="0" />
+                            <point x="0.891892" y="0.220524" />
+                            <point x="0.898649" y="0.696507" />
+                            <point x="0.560811" y="0.958515" />
+                            <point x="0.121622" y="0.717249" />
+                            <point x="0.141892" y="0.340611" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -149,10 +163,10 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="942486912292937" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.487179">
                         <collision-poly>
-                            <point x="0.995763" y="0.634615" />
+                            <point x="0.992585" y="0.490385" />
                             <point x="0.307203" y="0.564102" />
-                            <point x="0.305085" y="0.403846" />
-                            <point x="0.991525" y="0.365385" />
+                            <point x="0.305085" y="0.413462" />
+                            <point x="0.990466" y="0.483974" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -180,10 +194,10 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134938535459252" speed="5">
                     <frame duration="1" hotspotX="0.496815" hotspotY="0.489796">
                         <collision-poly>
-                            <point x="0.993631" y="0.663265" />
+                            <point x="0.998408" y="0.540817" />
                             <point x="0.307325" y="0.591837" />
                             <point x="0.308917" y="0.403061" />
-                            <point x="0.993631" y="0.336735" />
+                            <point x="0.995223" y="0.530612" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -198,7 +212,16 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156008196692780" speed="5">
-                    <frame duration="1" hotspotX="0.506849" hotspotY="0.502183" />
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.502183">
+                        <collision-poly>
+                            <point x="0.164384" y="0.246725" />
+                            <point x="0.445206" y="0.00436681" />
+                            <point x="0.828767" y="0.172489" />
+                            <point x="1" y="0.5" />
+                            <point x="0.575342" y="0.991266" />
+                            <point x="0.178082" y="0.912664" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -339,7 +362,7 @@
         <object-type name="Keyboard" sid="872264963606163">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="Sprite2" sid="400156812856774">
+        <object-type name="Zoneportail" sid="400156812856774">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562815845655709" speed="5">
@@ -378,6 +401,23 @@
         <object-type name="Background" sid="182725748338697">
             <plugin id="TiledBg" />
             <texture />
+        </object-type>
+        <object-type name="PasIci" sid="295764891955579">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="881446337354133">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302192902812621" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.513514" original-source="C:\Users\Ploump\Desktop\Ludus\Groupe\portal3\sprite\blocklevel.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="776063722476432">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Ploump\Desktop\Ludus\Groupe\Jeu\Sources\Background_portal3.1.jpg" />
         </object-type>
     </object-folder>
     <families />

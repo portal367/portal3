@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[Méca Portail]</name>
+    <events>
+        <variable constant="0" name="nbPortailbleu" sid="470164923414597" static="0" type="number">0</variable>
+        <variable constant="0" name="nbportailorange" sid="474294266304699" static="0" type="number">0</variable>
+        <event-block sid="723950740567036">
+            <conditions>
+                <condition id="0" name="On click" sid="789855281587529" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="226277991428807" type="Pistoletportailhorizontal">
+                    <param id="0" name="Object">Tirbleuhorizontal</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="833104564160140" type="Portailbleuvertical" />
+            </actions>
+        </event-block>
+        <event-block sid="227501107348690">
+            <conditions>
+                <condition id="0" name="On click" sid="770277541298150" type="Mouse">
+                    <param id="0" name="Mouse button">2</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="985234543563563" type="Pistoletportailhorizontal">
+                    <param id="0" name="Object">Tirorangehorizontal</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="178529966559877">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="484749600591278" type="Tirorangehorizontal">
+                    <param id="0" name="Object">Zoneportail</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="222333260597668" type="Tirorangehorizontal" />
+                <action id="-9" name="Destroy" sid="861457097199065" type="Portailorangevertical" />
+                <action id="0" name="Spawn another object" sid="590504574546967" type="Zoneportail">
+                    <param id="0" name="Object">Portailorangevertical</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="374176855979365">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="501809903450753" type="Tirbleuhorizontal">
+                    <param id="0" name="Object">Zoneportail</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="463855879220798" type="Tirbleuhorizontal" />
+                <action id="-9" name="Destroy" sid="332444480392642" type="Portailbleuvertical" />
+                <action id="0" name="Spawn another object" sid="949611285465221" type="Zoneportail">
+                    <param id="0" name="Object">Portailbleuvertical</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="327514000958735">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="486086924488359" type="System">
+                    <param id="0" name="Variable">nbportailorange</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="569136915963603" type="System">
+                    <param id="0" name="Variable">nbportailorange</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="907502905179995">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="613896008950775" type="System">
+                    <param id="0" name="Variable">nbPortailbleu</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="734781186265304" type="System">
+                    <param id="0" name="Variable">nbPortailbleu</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="875269886127156">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="497780330639728" type="Sandra">
+                    <param id="0" name="Object">Portailorangevertical</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="ThetaSecond" sid="966082141921779" static="0" type="number">0</variable>
+                <variable constant="0" name="Sx" sid="625589695084751" static="0" type="number">0</variable>
+                <variable constant="0" name="Sy" sid="626870917052146" static="0" type="number">0</variable>
+                <variable constant="0" name="Ex" sid="102737106471319" static="0" type="number">0</variable>
+                <variable constant="0" name="Ey" sid="563323164140250" static="0" type="number">0</variable>
+                <event-block sid="247908952349608">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="181005831437723" type="System">
+                            <param id="0" name="Variable">ThetaSecond</param>
+                            <param id="1" name="Value">Portailorangevertical.Angle-Portailbleuvertical.Angle+180</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="717533414820257" type="System">
+                            <param id="0" name="Variable">Ex</param>
+                            <param id="1" name="Value">Sandra.X-Portailorangevertical.X</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="973828852601000" type="System">
+                            <param id="0" name="Variable">Ey</param>
+                            <param id="1" name="Value">Sandra.Y-Portailorangevertical.Y</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="775978091452972" type="System">
+                            <param id="0" name="Variable">Sx</param>
+                            <param id="1" name="Value">Ex*cos(ThetaSecond)+Ey*(-sin(ThetaSecond))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="836904310999987" type="System">
+                            <param id="0" name="Variable">Sy</param>
+                            <param id="1" name="Value">Ex*sin(ThetaSecond)+Ey*cos(ThetaSecond)</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="837566036401821" type="Sandra">
+                            <param id="0" name="X">Sx+Portailbleuvertical.X</param>
+                            <param id="1" name="Y">Sy+Portailbleuvertical.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="973526430654764">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="512883707116407" type="Sandra">
+                    <param id="0" name="Object">Portailbleuvertical</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="ThetaSecond" sid="368951898371188" static="0" type="number">0</variable>
+                <variable constant="0" name="Ex" sid="892633755330539" static="0" type="number">0</variable>
+                <variable constant="0" name="Ey" sid="651386564666209" static="0" type="number">0</variable>
+                <variable constant="0" name="Sx" sid="698941581132332" static="0" type="number">0</variable>
+                <variable constant="0" name="Sy" sid="127330709688940" static="0" type="number">0</variable>
+                <event-block sid="809183471016543">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="943460065897477" type="System">
+                            <param id="0" name="Variable">ThetaSecond</param>
+                            <param id="1" name="Value">Portailbleuvertical.Angle-Portailbleuvertical.Angle+180</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="672815326508186" type="System">
+                            <param id="0" name="Variable">Ex</param>
+                            <param id="1" name="Value">Sandra.X-Portailbleuvertical.X</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="200200488958512" type="System">
+                            <param id="0" name="Variable">Ey</param>
+                            <param id="1" name="Value">Sandra.Y-Portailbleuvertical.Y</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="301063028225228" type="System">
+                            <param id="0" name="Variable">Sx</param>
+                            <param id="1" name="Value">Ex*cos(ThetaSecond)+Ey*(-sin(ThetaSecond))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="182161785713813" type="System">
+                            <param id="0" name="Variable">Sy</param>
+                            <param id="1" name="Value">Ex*sin(ThetaSecond)+Ey*cos(ThetaSecond)</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="802860964758810" type="Sandra">
+                            <param id="0" name="X">Sx+Portailorangevertical.X</param>
+                            <param id="1" name="Y">Sy+Portailorangevertical.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="313098337679928">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="374157723565330" type="Tirbleuhorizontal">
+                    <param id="0" name="Object">Solportail</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="868783715051353" type="Tirbleuhorizontal" />
+            </actions>
+        </event-block>
+        <event-block sid="794446370913147">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="500712626289975" type="Tirorangehorizontal">
+                    <param id="0" name="Object">Solportail</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="819359212451257" type="Tirorangehorizontal" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

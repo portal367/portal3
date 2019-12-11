@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[Alllvl]</name>
+    <events>
+        <event-block sid="309887826108986">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="270743062318343" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="294832508230624" type="PorteDébut">
+                    <param id="0" name="Animation">&quot;Fermetureporte&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="640067336427954" type="Sandra">
+                    <param id="0" name="Object">Pistoletportailhorizontal</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="474510865251766" type="Pistoletportailhorizontal">
+                    <param id="0" name="X">Sandra.X</param>
+                    <param id="1" name="Y">Sandra.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="491355699643495">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="620036727756840" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="175472622875816" type="Pistoletportailhorizontal">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

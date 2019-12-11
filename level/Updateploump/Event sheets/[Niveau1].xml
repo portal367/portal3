@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[Niveau1]</name>
+    <events>
+        <include>[MortFin]</include>
+        <include>[Méca Portail]</include>
+        <event-block sid="381865578261787">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="183142734320583" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="405586199866449" type="PorteDébut">
+                    <param id="0" name="Animation">&quot;Fermetureporte&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="129527611697777" type="Sandra">
+                    <param id="0" name="Object">dra</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="944377607726556" type="dra">
+                    <param id="0" name="Pin to">Sandra</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="706741756334779">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="316929379699371" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="220927007824221" type="dra">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="887520542639887" type="Pistoletportailhorizontal">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="690040866140195">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="188799796779870" type="Sandra">
+                    <param id="0" name="Object">Pistoletportailenbiaisbas</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="795297039142026" type="Pistoletportailenbiaisbas" />
+                <action id="-9" name="Destroy" sid="672311243829169" type="dra" />
+                <action id="0" name="Spawn another object" sid="254856849984928" type="Sandra">
+                    <param id="0" name="Object">Pistoletportailhorizontal</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="996663959766326" type="Pistoletportailhorizontal">
+                    <param id="0" name="Pin to">Sandra</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[MortFin]</name>
+    <events>
+        <event-group description="" sid="466606933217418" title="Mort/Fin">
+            <sub-events>
+                <event-block sid="800939458963609">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="462642074530348" type="Sandra">
+                            <param id="0" name="Object">PorteFin</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="723467384730903" type="PorteFin">
+                            <param id="0" name="Animation">&quot;OuverturePorte&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="285413094271497">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="472950972517075" type="PorteFin">
+                            <param id="0" name="Animation">&quot;OuverturePorte&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="516803277643404" type="System" />
+                        <action id="-21" name="Reset global variables" sid="786798697982783" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="411411710348710">
+                    <conditions>
+                        <condition id="-4" name="Is outside layout" sid="751320251824151" type="Sandra" />
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="180767823613394" type="System" />
+                        <action id="-21" name="Reset global variables" sid="217036195643752" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
