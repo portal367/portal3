@@ -7,8 +7,8 @@
             <sub-events>
                 <event-block sid="800939458963609">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="462642074530348" type="Sandra">
-                            <param id="0" name="Object">PorteFin</param>
+                        <condition id="0" name="On key pressed" sid="462642074530348" type="Keyboard">
+                            <param id="0" name="Key">69</param>
                         </condition>
                     </conditions>
                     <actions>

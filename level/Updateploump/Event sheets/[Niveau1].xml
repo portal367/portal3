@@ -72,5 +72,63 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="704485543488119">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="207269602704610" type="Sandra">
+                    <param id="0" name="Object">PorteFin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="199991331046889" type="Textsortie">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="890779651225026">
+            <conditions>
+                <condition id="-22" name="Else" sid="285220442691634" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="797601942966785" type="Textsortie">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="850652945466679">
+            <conditions>
+                <condition id="2" name="Key is down" sid="148832919656722" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="671694167115034" type="Sandra">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="550875829440494">
+            <conditions>
+                <condition id="2" name="Key is down" sid="949912987417815" type="Keyboard">
+                    <param id="0" name="Key">81</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="133986560633570" type="Sandra">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="708577762836389">
+            <conditions>
+                <condition id="2" name="Key is down" sid="480437443437332" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="675146434145886" type="Sandra">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

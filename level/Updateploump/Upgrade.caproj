@@ -13,6 +13,8 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
@@ -137,7 +139,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488464160256201" speed="5">
-                    <frame duration="1" hotspotX="0.527027" hotspotY="0.0742358">
+                    <frame duration="1" hotspotX="0.702703" hotspotY="0.528384">
                         <collision-poly>
                             <point x="0.506756" y="0.0786026" />
                             <point x="0.77027" y="0.268559" />
@@ -223,7 +225,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156008196692780" speed="5">
-                    <frame duration="1" hotspotX="0.561644" hotspotY="0.0567686">
+                    <frame duration="1" hotspotX="0.726027" hotspotY="0.519651">
                         <collision-poly>
                             <point x="0.294521" y="0.582969" />
                             <point x="0.424658" y="0.180131" />
@@ -392,7 +394,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562815845655709" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.004">
+                        <collision-poly>
+                            <point x="0.012" y="0.016" />
+                            <point x="0.98" y="0.016" />
+                            <point x="0.984" y="0.984" />
+                            <point x="0.016" y="0.98" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -582,6 +591,12 @@
                     <frame duration="1" hotspotX="0.512821" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="201660765621005">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Textsortie" sid="729151783552725">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

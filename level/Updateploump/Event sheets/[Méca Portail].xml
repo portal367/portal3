@@ -138,6 +138,15 @@
                             <param id="0" name="X">Sx+Portailbleuvertical.X</param>
                             <param id="1" name="Y">Sy+Portailbleuvertical.Y</param>
                         </action>
+                        <action id="11" name="Set collisions enabled" sid="201233960256811" type="Portailbleuvertical">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="774445311483138" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="579256857667247" type="Portailbleuvertical">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -182,6 +191,15 @@
                             <param id="0" name="X">Sx+Portailorangevertical.X</param>
                             <param id="1" name="Y">Sy+Portailorangevertical.Y</param>
                         </action>
+                        <action id="11" name="Set collisions enabled" sid="282498272278584" type="Portailorangevertical">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="566056536375204" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="582903792368403" type="Portailorangevertical">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -204,6 +222,26 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="819359212451257" type="Tirorangehorizontal" />
+            </actions>
+        </event-block>
+        <event-block sid="331682683500565">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="406907396358081" type="Tirorangehorizontal">
+                    <param id="0" name="Object">blocklevel</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="530733603961582" type="Tirorangehorizontal" />
+            </actions>
+        </event-block>
+        <event-block sid="149676844275493">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="615450914142573" type="Tirbleuhorizontal">
+                    <param id="0" name="Object">Tirbleuhorizontal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="191822555688074" type="Tirbleuhorizontal" />
             </actions>
         </event-block>
     </events>
