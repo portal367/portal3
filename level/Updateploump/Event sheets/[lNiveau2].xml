@@ -19,8 +19,8 @@
         </event-block>
         <event-block sid="983022234214275">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="948801896549738" type="PorteFin">
-                    <param id="0" name="Object">PorteFin</param>
+                <condition id="4" name="On finished" sid="365379918412882" type="PorteFin">
+                    <param id="0" name="Animation">&quot;OuverturePorte&quot;</param>
                 </condition>
             </conditions>
             <actions>

@@ -120,10 +120,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>669.066467285</x>
-                        <y>375.93560791</y>
+                        <y>399.530761719</y>
                         <z>0</z>
                         <width>15.423583984</width>
-                        <height>172.517120361</height>
+                        <height>125.326751709</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2438,6 +2438,33 @@
                         <hotspotX>0.504000008</hotspotX>
                         <hotspotY>0.004</hotspotY>
                         <angle>1.570811033</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Textsortie" uid="246">
+                    <properties>
+                        <text>Appuyez sur E pour ouvrir la porte</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>652.436767578</x>
+                        <y>347.129150391</y>
+                        <z>0</z>
+                        <width>189.627441406</width>
+                        <height>49.248687744</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>

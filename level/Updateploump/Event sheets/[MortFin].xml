@@ -5,18 +5,28 @@
     <events>
         <event-group description="" sid="466606933217418" title="Mort/Fin">
             <sub-events>
-                <event-block sid="800939458963609">
+                <event-block sid="907535127430501">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="462642074530348" type="Keyboard">
-                            <param id="0" name="Key">69</param>
+                        <condition id="1" name="Is overlapping another object" sid="544018508954261" type="Sandra">
+                            <param id="0" name="Object">PorteFin</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="723467384730903" type="PorteFin">
-                            <param id="0" name="Animation">&quot;OuverturePorte&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="800939458963609">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="462642074530348" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="723467384730903" type="PorteFin">
+                                    <param id="0" name="Animation">&quot;OuverturePorte&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="285413094271497">
                     <conditions>
