@@ -483,33 +483,9 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="541643965406974">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581141810124184" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite3" sid="583724202260421">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="919444086359344" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="TiledBackground2" sid="357202334668274">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\level3.jpg" />
-        </object-type>
-        <object-type name="Sprite2" sid="749955429679992">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="787953434206877" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\level3.jpg" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="Tilemap" sid="216296909810367">
             <plugin id="Tilemap" />
@@ -525,22 +501,6 @@
                 </tile>
             </tiles>
         </object-type>
-        <object-type name="Sprite4" sid="426173532105909">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="356718347845751" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite5" sid="877423017116138">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="203897492343735" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\level3.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="contourdemapsolide" sid="774298722368946">
             <plugin id="Sprite" />
             <behaviors>
@@ -550,22 +510,6 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849415389525566" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite6" sid="592495046885221">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="892355802186241" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite7" sid="455513517682783">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="149781429602174" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -598,12 +542,42 @@
         <object-type name="Textsortie" sid="729151783552725">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Coulissante" sid="374916502593332">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="213726413427645">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="592219743289038" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="background4" sid="279286632303147">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="101159832981252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="639095120645037">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549550213723905" speed="5">
+                    <frame duration="1" hotspotX="-1.20588" hotspotY="0.969697" original-source="C:\Users\jerem\OneDrive\Bureau\Défis TD\GOD OF SOUND\portal3\sprite\tourellerouge.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Level1.xml</layout>
         <layout>Level2.xml</layout>
         <layout>level3.xml</layout>
+        <layout>Level4.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>[Niveau1].xml</event-sheet>
@@ -612,6 +586,7 @@
         <event-sheet>[Alllvl].xml</event-sheet>
         <event-sheet>[lNiveau2].xml</event-sheet>
         <event-sheet>[Niveau3].xml</event-sheet>
+        <event-sheet>[Niveau4].xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="50" />

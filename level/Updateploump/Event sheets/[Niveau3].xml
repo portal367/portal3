@@ -30,5 +30,35 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="434735438550888">
+            <conditions>
+                <condition id="4" name="On finished" sid="735205714748234" type="Dalle">
+                    <param id="0" name="Animation">&quot;DalleAppuyée&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="490992405152963" type="Coulissante" />
+            </actions>
+        </event-block>
+        <event-block sid="233022830172701">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="799105473852738" type="Tirbleuhorizontal">
+                    <param id="0" name="Object">contourdemapsolide</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="770375317915943" type="Tirbleuhorizontal" />
+            </actions>
+        </event-block>
+        <event-block sid="291116508161169">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="823757245124624" type="Tirorangehorizontal">
+                    <param id="0" name="Object">contourdemapsolide</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="381341428711615" type="Tirorangehorizontal" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
